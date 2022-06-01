@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  mariadb:
+    image: mariadb:10.9.1-rc
+    #command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./containers/MariaDB/volume-db:/var/lib/mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: secret
+      MARIADB_DATABASE: wordpress
+  wordpress:
+    image: wordpress:php8.1-apache
+    depends_on:
+      - mariadb
+    volumes:
+      - ./containers/Wordpress/volume-wp:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: secret
+      WORDPRESS_DB_NAME: wordpress
+    ports:
+      - 8080:80  
+    links:
+      - mariadb:mariadb  
+
+#volumes:
+#  db_vol: containers/Mariadb/volume-db:/var/lib/mysql
+#  wp_vol: /volume-wp:/var/www/html   

@@ -1,0 +1,13 @@
+# Wordpress Dockerized
+
+*Environment variables:*  
+* -e WORDPRESS_DB_HOST: ..
+* -e WORDPRESS_DB_USER: ..
+* -e WORDPRESS_DB_PASSWORD: ..
+* -e WORDPRESS_DB_NAME: ..
+* -e WORDPRESS_TABLE_PREFIX: ..
+* -e WORDPRESS_DB_PASSWORD_FILE: ..
+* -e WORDPRESS_AUTH_SALT: ..
+* -e WORDPRESS_SECURE_AUTH_SALT: ..
+* -e WORDPRESS_DEBUG: ..
+
