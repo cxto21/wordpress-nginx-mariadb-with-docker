@@ -8,7 +8,7 @@ Author: Ignacio del Corro
 Basic template to start a wordpress project using MariaDB as database, with Docker technology.
 
 Under construction, but you can start using it.
-You should have the dependencies installed and run the following instuction:
+You should have the dependencies installed and run the following instruction:
 * "cd infrastructure; docker-compose up -d".
 ***
 *You can use the dependencies checker to install the dependencies. For the moment the dependencies are: "docker"; "docker-compose"*
