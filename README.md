@@ -2,6 +2,8 @@
 
 ![illustration of MariaDB and Wordpress inside Docker](./readme-src/mariadb+wordpres_docker.png)
 ---
+Author: Ignacio del Corro
+
 
 Basic template to start a wordpress project using MariaDB as database, with Docker technology.
 
