@@ -1,4 +1,4 @@
-# MaríaDB + Wordpress, Dockerized!
+# MariaDB + Wordpress, Dockerized!
 
 ![illustration of MariaDB and Wordpress inside Docker](./readme-src/mariadb+wordpres_docker.png)
 ---
